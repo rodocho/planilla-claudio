@@ -1,6 +1,6 @@
 <?php
-$Presión de succión (psig) = $_POST['Presión de succión (psig)']
+$Cliente = $_POST['cliente']
 
-echo $Presión de succión (psig)
+echo $Cliente
 
 ?>
