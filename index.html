@@ -1,30 +1,46 @@
-<!DOCTYPE html>
-<html5>
-<head>
-    <title>Mi Página web</title>
-    <link rel="stylesheet" type="text/css" href="style.css"></li>
-</head>
-<body>
+<form action="send.php" method="post"" name="contacto" id ="contacto" >
 
-<div class="row">
-   <div id="templatemo_contact" class="col-md-4 gallery-contact">
-</div>
-   <div class="col-md-8 templatemo_contactform">
-   <div class="templatemo_contacttitle">CONTACTO</div>
-    <div class="templatemo_sub_contacttitle">Si requieres un subtitulo escribelo aquí</div>
-        <p> Escribe aquí el mensaje que quieres presentar si es necesario.</p>
+Nombre completo <input name="nombre" type="text" id="nombre completo"size="30" maxlength="100">
+<br>
+<br>
+Correo electronico <input name="email" type="text" onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" size="25" maxlength="100" >
+<br>
+<br>
+Población <input name="poblacion" type="text" onBlur="MM_validateForm('poblacion','','R');return document.MM_returnValue" size="20" maxlength="60">
+<br>
+<br>
+Sexo
+<br>
+<br>
+<input type="radio" name="GrupoOpciones1" value="1"id="GrupoOpciones1_0" />
+Hombre
+<br>
+<input type="radio" name="GrupoOpciones1" value="2"id="GrupoOpciones1_1"/> Mujer
+<br>
+<br>
+Aficiones
+<br>
 
-   <form action="enviar.php" method="post">
-                        <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
-                        <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
-                        <input type="text" name="phone" id="subject" class="subject" placeholder="TELÉFONO">
-                        <textarea name="message" class="message" placeholder="MENSAJE ... " id="message"></textarea>
-                        <div class="clear"></div>
-                            <div class="col-md-8"> 
-                                <button type="submit" class="btn btn-primary">ENVIAR </button>
-    </div>
-    </form>
-    </div>
+<textarea cols="50" rows="5" name="comentarios"></textarea>
+<br>
+<br>
+Que opina de nuestra pagina
+<br>
+<br>
+<input type="radio" name="GrupoOpciones2" value="mucho" >me ha gustado mucho
+<br>
+<input type="radio" name="GrupoOpciones2" value="regular" >no esta mal
+<br>
+<input type="radio" name="GrupoOpciones2" value="mal" >no me ha gustado nada
+<br>
+<br>
+Danos tu opinion
+<br>
+<textarea cols="50" rows="5" name="opinion"></textarea>
+<br>
+<br>
+<input type="submit" value="Enviar formulario">
+<input type="Reset" value="Borrar datos">
 
-</body>
-</html>
+</form>
+</table>
